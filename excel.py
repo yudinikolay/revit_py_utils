@@ -1,18 +1,18 @@
+# IronPython 2.7 imports
 import clr
-
 clr.AddReference('Microsoft.Office.Interop.Excel')
 from Microsoft.Office.Interop import Excel
 
+import sys
+pyt_path = r'C:\Program Files (x86)\IronPython 2.7\Lib'
+sys.path.append(pyt_path)
 
+# working with excel application
 import System
 from System.Runtime.InteropServices import Marshal
 from System import Array
 
-import sys
-
-pyt_path = r'C:\Program Files (x86)\IronPython 2.7\Lib'
-sys.path.append(pyt_path)
-
+# Working with directories
 import os.path
 # Regular expressions
 import re
